@@ -71,7 +71,7 @@
         });
         jq(".admin-dashboard-link").click(function () {
             emr.navigateTo({
-                url: "${ ui.urlBind("/" + contextPath + config.adminPatientDashboardUrl, [ patientId: patient.patient.id ] ) }"
+                url: "${ ui.urlBind("/" + contextPath + "/patientDashboard.form?patientId=" + patient.patient.id ) }"
             });
         })
     })
@@ -124,13 +124,13 @@
                     <i class="toggle-icon icon-caret-up small"></i>
                 </a>
             </span>
-            <span class="admin-dashboard-link">
-            Go To Admin Dashboard
-            </span>
             <div class="hidden" id="contactInfoContent" class="contact-info-content">
                 ${ ui.includeFragment("coreapps", "patientdashboard/contactInfoInline", [ patient: config.patient, contextModel: appContextModel ]) }
             </div>
         </h1>
+        <h2 class="admin-dashboard-link">
+        Go To Admin Dashboard
+        </h2>
         <% if (config.activeVisit) { %>
             <% def visit = config.activeVisit.visit %>
 

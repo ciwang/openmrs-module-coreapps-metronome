@@ -120,14 +120,6 @@
     </globalProperty>
 
     <globalProperty>
-        <property>coreapps.adminPatientDashboardUrl</property>
-        <defaultValue>/patientDashboard.form?patientId={{patientId}}</defaultValue>
-        <description>
-            Link to system admin patient dashboard
-        </description>
-    </globalProperty>
-
-    <globalProperty>
         <property>coreapps.visitsPageUrl</property>
         <defaultValue>/coreapps/patientdashboard/patientDashboard.page?patientId={{patientId}}&#35;visits</defaultValue>
         <description>
