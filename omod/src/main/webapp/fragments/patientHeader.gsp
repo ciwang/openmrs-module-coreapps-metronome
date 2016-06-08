@@ -71,7 +71,7 @@
         });
         jq(".admin-dashboard-link").click(function () {
             emr.navigateTo({
-                url: "${ ui.urlBind("/" + contextPath + "/patientDashboard.form?patientId=" + patient.patient.id ) }"
+                url: "${ ui.urlBind("/" + contextPath + config.adminDashboardUrl, [ patientId: patient.patient.id ] ) }"
             });
         })
     })

@@ -5,6 +5,7 @@ public class CoreAppsConstants {
     public static final String GP_DEFAULT_PATIENT_IDENTIFIER_LOCATION = "coreapps.defaultPatientIdentifierLocation";
 
     public static final String GP_DASHBOARD_URL = "coreapps.dashboardUrl";
+    public static final String GP_ADMIN_DASHBOARD_URL = "coreapps.adminDashboardUrl";
     public static final String GP_VISITS_PAGE_URL = "coreapps.visitsPageUrl";
     public static final String GP_VISITS_PAGE_WITH_SPECIFIC_URL = "coreapps.visitsPageWithSpecificVisitUrl";
 

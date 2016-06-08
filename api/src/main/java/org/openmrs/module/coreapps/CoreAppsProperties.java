@@ -39,6 +39,17 @@ public class CoreAppsProperties extends ModuleProperties {
         }
     }
 
+    //Added by Cindy for admin dashboard version
+    public String getAdminDashboardUrl() {
+        String url = getGlobalProperty(CoreAppsConstants.GP_ADMIN_DASHBOARD_URL, false);
+        if (!StringUtils.hasText(url)) {
+            return "/patientDashboard.form?patientId={{patientId}}";
+        }
+        else {
+            return url;
+        }
+    }
+
     public String getDashboardUrlWithoutQueryParams() {
         String url = getGlobalProperty(CoreAppsConstants.GP_DASHBOARD_URL, false);
         if (!StringUtils.hasText(url)) {
